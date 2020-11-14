@@ -1,0 +1,5 @@
+mvn archetype:generate -DgroupId=co.edu.usbcali.maven -DartifactId=simple3 -Dpackage=co.edu.usbcali.maven -Dversion=1.0.0
+mvn install
+mvn site
+move simple3-1.0.0.jar ../..
+certutil -hashfile simple3-1.0.0.jar sha256
